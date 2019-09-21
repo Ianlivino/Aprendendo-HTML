@@ -1,0 +1,59 @@
+$primaryColor: #009;
+.container {
+  width: 100%;
+  max-width: 1043px;
+  margin: 0 auto;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  * {
+    box-sizing: border-box;
+  }
+}
+img {
+  max-width: 100%;
+  border-radius: 15px 0 0 0;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+}
+.home-banner {
+  padding: 40px;
+  text-align: center;
+  background: #009;
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+  }
+}
+.home-artigos {
+  padding: 0;
+  .box {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: transform 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    &:hover {
+      transform: scale(1.03);
+      color: #333;
+    }
+  }
+  h2 {
+    color: $primaryColor;
+    font-size: 2rem;
+  }
+  a {
+    color: #fff;
+    width: 100%;
+    background: $primaryColor;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 0 0 15px 15px;
+  }
+  h3 {
+    color: $primaryColor;
+  }
+}
